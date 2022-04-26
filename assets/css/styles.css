@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn&family=Oswald:wght@200;400;600&display=swap');
+
+@media(min-width: 320px){
+    body{
+        width: 100%;
+        background-color: #eee7df;
+    }
+    .logo{
+        width: 150px;
+        cursor:pointer;
+        color:#45302d
+    }
+
+    .logo img{
+        margin-top: 20px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li{
+        list-style: none;
+        margin:0 15px;
+        text-transform: uppercase;
+        font-weight:bold;
+        margin-bottom: 5px;
+    }
+    .nav-menu li a{
+        text-decoration: none;
+        color:#45302d;
+        font-family: "Oswald Light";
+        font-size: 15px;
+
+    }
+
+    .info-container img{
+        height: 100px;
+        display: flex;
+
+    }
+
+    .info-container{
+        background-color: #e0d5d0;
+        padding: 15px 0 15px 0;
+    }
+
+    .info-container{
+        padding:0 10px;
+    }
+
+    .main-banner{
+        display:none;
+    }
+
+    .info{
+        text-align: center;
+
+    }
+
+    .info h1{
+        font-family: "Gwendolyn";
+        font-weight:bolder;
+    }
+
+    .products-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #e0d5d0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .products__img{
+        height: 100px;
+        margin:10px 0 10px 0;
+    }
+
+    .products__desc{
+        margin: 0 10px;
+    }
+
+    .products__title{
+        font-family: "Oswald";
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .products__desc{
+        font-family: "Oswald";
+        font-weight: 400;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        margin-top:10px;;
+    }
+
+    .contact-icons{
+        font-size: 20px;
+        display: flex;
+        letter-spacing: 10px;
+    }
+
+    .promo-banner img{
+        display:none;
+    }
+
+    .promo-title{
+        font-size: 20px;
+        text-align: center;
+        color: #45302d;
+        font-family: "Oswald";
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+
+    .bank-list img{
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .bank-list{
+        text-align: center;
+        margin-top:30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarj-list{
+        text-align: center;
+        margin-top:10px
+
+    }
+
+    .tarj-list img{
+        width: 70px;
+        margin-top:30px;
+        margin-bottom: 30px;
+    }
+    .rights p{
+        text-align: center;
+    }
+    
+}
+/*----------------------------------*/
+/*----------------------------------*/
+*{
+    margin:auto;
+    padding: 0;
+}
+
+
+@media(min-width:600px){
+body{
+    width: 75%;
+}
+
+.ix-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 560px auto 300px 100px ;
+    grid-template-areas: "nav" 
+                         "ban"
+                         "info"
+                         "prod"
+                         "der" ;
+}
+
+.logo{
+    width: 100px;
+}   
+.header{
+    flex-direction: row;
+    width: 100%;
+    grid-area: nav;
+    align-items: center;
+}
+.header-nogrid{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.nav-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu ul a{
+    font-size: 20px;
+}
+
+.main-banner{
+    height: 100%;
+    grid-area: ban;
+    width: 100%;
+    background-image: url(../img/main-banner.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.main-banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    position: absolute;
+    color:#eee7df;
+    text-align: center;
+    max-height: 454px;
+}
+
+.title__main{
+    font-family: "Gwendolyn";
+    font-weight: 100;
+    font-size: 12em;
+    margin-top: 20px;
+}
+
+.title__sub{
+    font-family: "Oswald Regular"; 
+    text-transform: uppercase;
+    font-size: 12em;
+    margin-top: -7rem;
+}
+
+.info-container{
+    background-color: #eee7df;
+}
+
+
+.info{
+    grid-area: info;
+    text-align: center;
+}
+
+.muffins{
+    grid-area: der;
+}
+
+.info-container{
+    display: flex;
+    align-content: space-between;
+    grid-area: info;
+    align-items: center;
+}
+
+.info-container img{
+    margin: 0 30px;
+    height: 250px;
+}
+.info{
+    margin: 0 30px;
+    font-size: 30px;
+    color: #45302d;
+}
+.info h1{
+    font-size: 2.3em;
+
+}
+
+
+.products-container{
+    background-image: url(../img/prod-banner.png);
+    margin-top: 4rem;
+    background-size: cover;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    grid-area: prod;
+    height: 300px;
+}
+
+.products__img{
+    width: 120x;
+    height: 120px;
+    padding-bottom: 20px;
+}
+
+.products{
+    width: 200px;
+    text-align: center;
+}
+
+.products__desc{
+    color:#eee7df;
+
+    letter-spacing: 0,5px;
+    font-size: 18px;
+}
+
+.products__title{
+    color:#eee7df;
+
+    font-size: 22px;
+    
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
+    height: 100px;
+    grid-area: der;
+    margin-top: 4rem;
+}
+
+.contact-icons{
+    font-size: 35px;
+    letter-spacing: 20px;
+    color: #45302d;
+
+}
+
+.rights{
+    text-transform: uppercase;
+    color:45302d;
+    font-family: "Oswald";
+    letter-spacing:0.5px;
+}
+
+
+
+/*PAGINA DE PRODUCTOS*/
+/*BANNER*/
+
+
+
+.products-banner{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.products-banner__img{
+    width: 100%;
+
+}
+
+.products-banner__container{
+    position: absolute;
+    align-self: center;
+    flex-direction: column;
+    justify-items: baseline;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+span{
+    background-color: rgba(0, 0, 0, 0.658);
+    opacity: 0.75;
+    font-family: sans-serif;
+    font-weight:100;
+}
+/*----------------------*/
+
+/*GRILLA DE MUFFINS*/
+.muffins-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 210px 210px;
+    grid-template-areas: "muffin1 muffin2 muffin3 muffin4"
+                         "text1 text2 text3 text4";
+    margin-bottom: 40px;
+}
+
+/*MUFFINS HOVER*/
+.choco-cupcake img{
+    opacity:1;  
+    display: block;
+    transition: .5s ease; 
+}
+.content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    color:#45302d;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.overlay{
+    opacity: 0;
+} 
+.choco-cupcake:hover img{
+    opacity: .5;
+}
+.choco-cupcake:hover .overlay{
+    opacity: 1;
+}
+/**------------------------*/
+.straw-cupcake img{
+    opacity:1;  
+    display: block;
+    transition: .5s ease; 
+}
+.straw-cupcake:hover img{
+    opacity: .5;
+}
+.straw-cupcake:hover .overlay{
+    opacity: 1;
+}
+/*-----------------------------------*/
+.velvet-cupcake img{
+    opacity:1;  
+    display: block;
+    transition: .5s ease; 
+}
+.velvet-cupcake:hover img{
+    opacity: .5;
+}
+.velvet-cupcake:hover .overlay{
+    opacity: 1;
+}
+
+/*-----------------------------------*/
+.vainilla-cupcake img{
+    opacity:1;  
+    display: block;
+    transition: .5s ease; 
+}
+.vainilla-cupcake:hover img{
+    opacity: .5;
+}
+.vainilla-cupcake:hover .overlay{
+    opacity: 1;
+}
+/*-----------------------------------*/
+.choco-cupcake{
+    grid-area: muffin1;
+    position: relative;
+}
+
+.straw-cupcake{
+    grid-area: muffin2;
+    position: relative;
+}
+
+.velvet-cupcake{
+    grid-area: muffin3;
+    position: relative;
+}
+
+.vainilla-cupcake{
+    grid-area: muffin4;
+    position: relative;
+}
+
+.choco-text{
+    grid-area: text3;
+
+}
+
+.cupcake-img{
+    height: 300px;
+    box-shadow: 4px 4px 11px 2px rgba(0,0,0,0.2);
+}
+
+.cupcake-banner{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.products-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald Regular"; 
+    font-size: 50px;
+    color: #45302d;
+    letter-spacing: 3px;
+    padding-bottom:30px;
+}
+
+.product-text{
+    font-size:17px;
+    font-family: "Oswald Regular"; 
+    letter-spacing: 1px;
+    text-align: center;
+    margin:0 50px 0 50px;
+    padding-top: 10px;
+    align-self:flex-end;
+    font-family: "Oswald";
+}
+/*-------------------------------*/
+
+/*GRILLA DE TORTAS*/
+.cakes-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 350px;
+    grid-template-areas: "cake1 text5 cake2 text6"
+                        " cake1 cake3 cake2 cake4";
+    margin-bottom: 40px;
+    background-color:#ccbfb1;
+    align-items: center;
+}
+.fudge-cake{
+    grid-area: cake3;
+    margin: 0 30px;
+}
+
+.white-cake{
+    grid-area: cake4;
+    margin: 0 30px;
+
+}
+
+.black-cake{
+    grid-area: cake1;
+}
+
+.rose-cake{
+    grid-area: cake2;
+}
+
+.cake-img{
+    width: 300px;
+    box-shadow: 4px 4px 11px 2px rgba(0,0,0,0.2);
+}
+
+.rose-text{
+    grid-area: text5;
+}
+
+.cake-text{
+    margin:0 20px 0 20px
+}
+/*-------------------------------*/
+
+/*GRILLA DE GALLETITAS*/
+.cookies-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 100px 250px 100px;
+    grid-template-areas: "cookie1 cookie2"
+                        "text7 text8"
+                        "cookie3 cookie4"
+                        "text9 text10";
+    margin-bottom: 40px;
+}
+
+.brownie-cookie{
+    grid-area: cookie1;
+}
+
+.buter-cookie{
+    grid-area: cookie2;
+}
+
+.chip-cookie{
+    grid-area: cookie3;
+}
+
+.funfetti-cookie{
+    grid-area: cookie4;
+}
+
+.brownie-text{
+    grid-area: text7;
+}
+
+.buter-text{
+    grid-area: text8;
+}
+
+.chip-text{
+    grid-area: text9;
+}
+
+.funfetti-text{
+    grid-area: text10;
+}
+
+.cookie-text{
+    font-size:17px;
+    font-family: "Oswald Regular"; 
+    letter-spacing: 1px;
+    text-align: center;
+    margin:0 50px 0 50px;
+    padding-top: 10px;
+    font-family: "Oswald";
+}
+/*------------------------------------*/
+
+/*PAGINA DE CONTACTO*/
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: #eee7df;
+    position: relative;
+    bottom: 100px;
+    box-shadow: 4px 4px 11px 2px rgba(0,0,0,0.1);
+}
+
+.contact-img{
+    width: 700px;
+    margin: 20px 20px;
+}
+
+
+
+.contact-text{
+    margin: 0 20px;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+.contact-banner__img{
+    position: relative;
+    padding-top: -20px;
+    width: 100%;
+}
+
+.contact-banner{
+    position: relative;
+}
+/*------------------------------------*/
+
+/*GRILLA CONTACTO*/
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas: "wpp map mail"
+                         "wpptext maptext mailtext";
+    background-color: #ccbfb1;
+    width: 80%;
+    padding: 30px 0 30px 0;
+}
+
+.fa-logo{
+    grid-area: wpp;
+}
+
+.map-logo{
+    grid-area: map;
+}
+
+.mail-logo{
+    grid-area: mail;
+}
+
+.wpp-info{
+    grid-area: wpptext;
+}
+
+.add-info{
+    grid-area: maptext;
+}
+
+.email-info{
+    grid-area: mailtext;
+}
+
+.co-logo{
+    font-size: 5rem;
+    color: #45302d;
+}
+
+.contact-title{
+    font-family: "Oswald";
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list-info{
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+/*----------------------------------------*/
+/*FORMULARIO*/
+
+form{
+	width: 600px;
+	padding:16px;
+	margin:auto;
+	background-color:#ccbfb1;
+    margin-top: 70px;
+}
+
+form label{
+	width:72px;
+    font-size: 15px;
+    color: #45302d;
+	display:inline-block;
+    font-family: sans-serif;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:50%;
+	padding:8px 16px;
+	margin-top:15px;
+	border:1px solid #45302d;
+	display:block;
+	color:#fff;
+	background-color:#45302d;;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:70px;
+	border:1px solid #f6f6f6;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+/*------------------------------------*/
+
+/*PAGINA DE PROMOCIONES*/
+
+.pr-grid-container{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "nav"
+                         "pr-ban"
+                         "promo"
+                         "footer";
+}
+
+.promo-banner img{
+    width: 100%;
+    display: flex;
+}
+
+.promo-banner{
+    grid-area: pr-ban;
+}
+
+.promo-container{
+    width: 100%;
+}
+
+
+
+.bank-list img{
+    width: 200px;
+    margin:0;
+    margin:30px
+}
+
+.bank-list, .tarj-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin:0;
+
+}
+
+.tarj-list img{
+    height: 80px;
+    margin:30px;
+}
+
+.promo-title{
+
+    font-size: 24px;
+    margin: 35px 0 15px 0;
+        text-align: center;
+
+}
+
+.promo-container{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.prod-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+}
+/*-------------------------------------*/
+/*ABOUT US */
+
+.us-banner{
+    display: flex;
+    width: 100%;
+}
+
+.us-banner{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.us-banner__img{
+    width: 100%;
+
+}
+
+.about-info{
+    text-align: center;
+}
+
+.about-info h1{
+    font-family: "Oswald";
+    font-size: 50px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.about-text{
+    font-size: 20px;
+    width: 60%;
+}
+
+.about-text p{
+    margin-bottom: 30px;
+}
