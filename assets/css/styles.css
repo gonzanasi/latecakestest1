@@ -1,199 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Gwendolyn&family=Oswald:wght@200;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap');
-/*
-@media(min-width: 320px){
-    body{
-        width: 100%;
-        background-color: #eee7df;
+
+@media(max-width: 766px){
+
+    *{
+        margin:auto;
+        padding: 0;
     }
-    .logo{
-        width: 150px;
-        cursor:pointer;
-        color:#45302d
-    }
-
-    .logo img{
-        margin-top: 20px;
-    }
-
-    .header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-
-    .nav-menu ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-menu li{
-        list-style: none;
-        margin:0 15px;
-        text-transform: uppercase;
-        font-weight:bold;
-        margin-bottom: 5px;
-    }
-    .nav-menu li a{
-        text-decoration: none;
-        color:#45302d;
-        font-family: "Oswald Light";
-        font-size: 15px;
-
-    }
-
-    .info-container img{
-        height: 100px;
-        display: flex;
-
-    }
-
-    .info-container{
-        background-color: #e0d5d0;
-        padding: 15px 0 15px 0;
-    }
-
-    .info-container{
-        padding:0 10px;
-    }
-
-    .main-banner{
-        display:none;
-    }
-
-    .info{
-        text-align: center;
-
-    }
-
-    .info h1{
-        font-family: "Gwendolyn";
-        font-weight:bolder;
-    }
-
-    .products-container{
-        display: flex;
-        flex-direction: column;
-        background-color: #e0d5d0;
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .products__img{
-        height: 100px;
-        margin:10px 0 10px 0;
-    }
-
-    .products__desc{
-        margin: 0 10px;
-    }
-
-    .products__title{
-        font-family: "Oswald";
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    .products__desc{
-        font-family: "Oswald";
-        font-weight: 400;
-    }
-
-    .footer{
-        display: flex;
-        flex-direction: column;
-        margin-top:10px;;
-    }
-
-    .contact-icons{
-        font-size: 20px;
-        display: flex;
-        letter-spacing: 10px;
-    }
-
-    .promo-banner img{
-        display:none;
-    }
-
-    .promo-title{
-        font-size: 20px;
-        text-align: center;
-        color: #45302d;
-        font-family: "Oswald";
-        text-transform: uppercase;
-        margin-top: 30px;
-    }
-
-    .bank-list img{
-        width: 200px;
-        margin-top: 10px;
-    }
-
-    .bank-list{
-        text-align: center;
-        margin-top:30px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tarj-list{
-        text-align: center;
-        margin-top:10px
-
-    }
-
-    .tarj-list img{
-        width: 70px;
-        margin-top:30px;
-        margin-bottom: 30px;
-    }
-    .rights p{
-        text-align: center;
-    }
-    
-}
-/*----------------------------------*/
-/*----------------------------------*/
-
-@media(min-width: 320px){
 
     body{
         width: 100%;
+        background-color:rgba(243, 237, 232, 0.39);
+    }
+
+    .navbar-brand{
+        padding-top: 0;
     }
 
     .late-logo{
         width: 100px;
+        text-align: left;
     }
 
-    .navbar-brand{
-        margin: 0;
-        padding-top: 0;
-    }
 
     .navbar{
         background-color: #eee7df !important;
-        
+    }
+
+    span{
+        background-color: #eee7df !important
     }
 
     .navbar-light .navbar-toggler{
         border: none;
     }
+    
 
     .title_banner{
         background-image: url(../img/mob-banner.jpg);
         background-size:cover;
         width: 100%;
         height: 500px;
+        padding-top: 20px;
     }
 
     .title__bannerinfo{
         width: 80%;
         height: 400px;
         background: rgba(240, 229, 219, 0.75);
-        margin-top: 30px;
-
     }
 
     .main_description{
@@ -221,59 +75,115 @@
         background-color: #eee7df;
     }
 
+    .mob-carousel{
+        padding-top: 20px;
+        background-color:#b8ab9f ;
+        padding-bottom: 30px;
+        margin:40px 15px 40px 15px;
+    }
+    .carousel-item img{
+    height: 120px;
+    }
+    .carousel-item__title{
+        font-family: "Oswald";
+        font-size: 30px;
+        color: #eee7df;
+        font-weight: bold;
+    }
+
+
+    .prod-btn{
+        display: block;
+        margin:0 auto 0 auto;
+        padding: 7px 7px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: #eee7df;
+        margin: 30px auto 30px auto;
+    }
+
+    .prod-btn a{
+        text-decoration: none;
+        color:black;
+        margin: 0 10px;
+    }
+
+    .footer{
+        background-color: white;
+        z-index: 999;
+    }
+    
+    .mob-media{
+        font-size: 30px;
+        display: flex;
+        width: 60%;
+        color:#b8ab9f;
+        margin-bottom: 20px;
+
+    }
+
+    .mob-rig{
+        font-size: 13px;
+        color:rgb(126, 126, 126);
+        margin-bottom: 30px;
+    }
+
+    .main-container{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+
+    .main-container, .dk-banner, .products-container, .dk-footer{
+        display: none;
+    }
 
 }
 
+/*****************/
+/****************/
 
 
-*{
-    margin:auto;
-    padding: 0;
+
+p{
+    margin-bottom: 0;
 }
 
-
-@media(min-width:600px){
+@media(min-width:768px){
 body{
     width: 75%;
+    margin: 0 auto;
+    background-color: #eee7df;
 }
 
-.ix-grid-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 560px auto 300px 100px ;
-    grid-template-areas: "nav" 
-                         "ban"
-                         "info"
-                         "prod"
-                         "der" ;
+.navbar, .navbar span{
+    background-color: #eee7df !important;
 }
 
-.logo{
+
+.dk-banner{
+    width: 100%;
+}
+
+.title_banner{
+    display: none;
+}
+
+.late-logo{
     width: 100px;
-}   
+    cursor:pointer;
+    color:#45302d
+}
+
 .header{
-    flex-direction: row;
-    width: 100%;
-    grid-area: nav;
-    align-items: center;
-}
-.header-nogrid{
     display: flex;
-    width: 100%;
-    height: 100px;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-.nav-menu ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-menu ul a{
-    font-size: 20px;
-}
 
 .main-banner{
     height: 100%;
@@ -300,68 +210,176 @@ body{
 .title__main{
     font-family: "Gwendolyn";
     font-weight: 100;
-    font-size: 12em;
+    font-size: 6em;
     margin-top: 20px;
 }
 
 .title__sub{
     font-family: "Oswald Regular"; 
     text-transform: uppercase;
-    font-size: 12em;
-    margin-top: -7rem;
-}
-
-.info-container{
-    background-color: #eee7df;
-}
-
-
-.info{
-    grid-area: info;
-    text-align: center;
+    font-size: 3em;
+    margin-top: -3rem;
 }
 
 .muffins{
-    grid-area: der;
-}
-
-.info-container{
-    display: flex;
-    align-content: space-between;
-    grid-area: info;
-    align-items: center;
-}
-
-.info-container img{
-    margin: 0 30px;
-    height: 250px;
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .info{
-    margin: 0 30px;
-    font-size: 30px;
-    color: #45302d;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:0 auto;
 }
-.info h1{
-    font-size: 2.3em;
 
+
+.info h1{
+    font-family: "Gwendolyn";
+    font-weight:bolder;
+    font-size: 40px;
+}
+
+.info p{
+    margin: 0;
+}
+
+.mob-carousel, .prod-btn{
+    display: none;
 }
 
 
 .products-container{
     background-image: url(../img/prod-banner.png);
-    margin-top: 4rem;
+    margin-top: 2rem;
     background-size: cover;
     display:flex;
     flex-direction: row;
     width: 100%;
     grid-area: prod;
-    height: 300px;
+    height: 150px;
+    width: 100%;
+    padding-top: 15px;
 }
 
+.footer{
+    justify-content: space-evenly;
+}
+
+.mob-footer{
+    display: none;
+}
+
+.rights p{
+    font-size: 14px;
+}
+
+.contact-icons{
+    font-size: 20px;
+    letter-spacing: 20px;
+    color: #45302d;
+
+}
+
+}
+
+/*******************************/
+/*********************************/
+
+@media(min-width:1028px){
+    .navbar-collapse{
+        flex-grow: 0;
+    }
+
+    .navbar-brand{
+        padding-top: 0;
+    }
+
+    .nav-link{
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-left: 50px;
+    }
+
+    .navbar-nav a{
+        margin: 0 20px;
+    }
+
+    .navbar{
+        margin-top: 30px;
+    }
+
+    .title__main{
+        font-size: 15rem;
+    }
+
+    .title__sub{
+        font-size: 9rem
+    }
+
+    .title{
+        line-height: 14rem;
+    }
+
+    .info{
+        flex-direction: row;
+    ;
+    }
+
+    .info p{
+        font-size: 23px;
+    }
+
+    .info h1{
+        font-size: 3.4rem;
+    }
+
+    .muffins{
+        margin-top: 0;
+    }
+
+    .products-container{
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .products img{
+        height: 140px;
+
+    }
+
+    .products{
+        margin: 10px 30px;
+    }
+
+    .products__title{
+        font-size: 3px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        width: 100%;
+
+    }
+
+}
+
+/*************************************************/
+/*************************************************/
+
 .products__img{
-    width: 120x;
-    height: 120px;
+    width: 90x;
+    height: 90px;
     padding-bottom: 20px;
+}
+
+.products__desc{
+    display: none;
 }
 
 .products{
@@ -385,20 +403,14 @@ body{
 
 .footer{
     display: flex;
-    flex-direction: column;
-    width: 100%;
     flex-direction: row;
-    height: 100px;
-    grid-area: der;
-    margin-top: 4rem;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    align-items: center;
 }
 
-.contact-icons{
-    font-size: 35px;
-    letter-spacing: 20px;
-    color: #45302d;
 
-}
 
 .rights{
     text-transform: uppercase;
