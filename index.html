@@ -13,12 +13,13 @@
 </head>
 
 <body>
+  <!------------NAVBAR------------>
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <div class="logo-cont">
                 <img class="late-logo" src="./assets/img/late-logo.png" alt="">
-              </a>
+              </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -34,16 +35,18 @@
             </div>
           </nav>
     </div>
-           <!--HEADER-->
-    <div class="header">
+<!---------------------------->
+
+<!--DESKTOP HEADER-->
+    <div class="dk-header">
       <div class="title">
           <p class="title__main">late</p>
           <p class="title__sub">cakes</p>
       </div>
-  </div>
-  <!---------------------------------->
+    </div>
+<!---------------------------------->
 
-  <!--CONTENIDO PRINCIPAL-->
+<!--DESKTOP CONTENIDO PRINCIPAL-->
   <main>   
     <img class="dk-banner" src="./assets/img/main-banner.png" alt="">
       <div class="main-container">
@@ -55,20 +58,20 @@
               <p>Buscamos que tu vida sea más dulce. Veni a visitarnos y conocé las delicias que tenemos para ofrecerte.</p>
             </div> 
             <img class="muffins" src="./assets/img/muffins.png" alt="muffins">
-            </div>
-          
+            </div>   
       </div>
-  <!---------------------------------->
+<!---------------------------------->
 
-          <div class="title_banner">
-            <div class="title__bannerinfo">
-                <p class="main_description">Descubrí lo que tenemos para ofrecerte</p>
-                <p class="slideto">Deslizá para conocer nuestras mejores elaboraciones</p>
-                <button class="us_btn">CONOCENOS</button>
-            </div>
-
-          </div>
-      <main class="mob-carousel">
+<!--MOBILE CONTENIDO PRINCIPAL-->
+    <div class="title_banner">
+      <div class="title__bannerinfo">
+        <p class="main_description">Descubrí lo que tenemos para ofrecerte</p>
+        <p class="slideto">Deslizá para conocer nuestras mejores elaboraciones</p>
+        <button class="us_btn">CONOCENOS</button>
+    </div>
+    </div>
+      
+    <main class="mob-carousel">
           <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -93,16 +96,17 @@
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon next-img" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon next-img" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-      </main>
+    </main>
 
+<!--MOB & DK PRODUCTOS-->
       <section class="products-container">
         <div class="products">
             <img class="products__img" src="./assets/img/cake-vec.png" alt="flan">
@@ -130,45 +134,43 @@
             <p class="products__desc">Incomparables para merendar, únicos por su sabor y hermosos por donde se los mire.</p>
         </div>
     </section>
+<!---------------------------------->
 
-      <section>
+<!--MOBILE BTN-->
         <div>
           <button  class="prod-btn">
             <a href="./pages/products.html">VER MÁS PRODUCTOS</a>
           </button>
-          
         </div>
-      </section>  
+<!----------------------------------> 
+
       <footer>
-      <div class="mob-footer">
-        <div class="mob-media text-center">
-          <i class="fa-brands fa-facebook fbicon"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-whatsapp-square"></i>
+<!--MOBILE FOOTER-->    
+        <div class="mob-footer">
+          <div class="mob-media text-center">
+            <i class="fa-brands fa-facebook fbicon"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp-square"></i>
+          </div>
+          <p class="text-center mob-rig">© 2022 Late Cakes. Todos los derechos reservados.</p>
         </div>
-        <p class="text-center mob-rig">© 2022 Late Cakes. All rights reserved.</p>
-      </div>
+<!---------------------------------->
+<!--DESKTOP FOOTER-->
       <div class="dk-footer">
-        <footer class="footer">
+        <div class="footer">
           <div class="rights">
-              <p>® Todos los derechos reservados - Late Cakes </p>
+              <p>© 2022 Late Cakes. Todos los derechos reservados.</p>
           </div>
           
           <div class="contact-icons">
               <i class="fa-brands fa-facebook fbicon"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-whatsapp-square"></i>
-              
           </div>
-      </footer>
+        </div>
       </div>
+<!---------------------------------->
       </footer>  
-
- 
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

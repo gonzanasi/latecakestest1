@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gwendolyn&family=Oswald:wght@200;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap');
 
-@media(max-width: 766px){
+@media(max-width: 767px){
 
     *{
         margin:auto;
@@ -13,29 +13,37 @@
         background-color:rgba(243, 237, 232, 0.39);
     }
 
+/* INDEX PAGE */
     .navbar-brand{
         padding-top: 0;
     }
 
-    .late-logo{
-        width: 100px;
-        text-align: left;
+    .navbar-toggler-icon{
+        background-color: #eee7df
     }
 
+    .late-logo{
+        width: 100px;
+        position: relative;
+        right: 50%;
+    }
 
+    .navbar-toggler{
+        margin-right: 5px;
+    }
+    
     .navbar{
         background-color: #eee7df !important;
     }
 
-    span{
-        background-color: #eee7df !important
+    .next-img{
+        background-color: #b8ab9f !important
     }
 
     .navbar-light .navbar-toggler{
         border: none;
     }
     
-
     .title_banner{
         background-image: url(../img/mob-banner.jpg);
         background-size:cover;
@@ -51,11 +59,9 @@
     }
 
     .main_description{
-
         color:black;
         font-size: 38px;
         padding: 24px 20px;
-        margin: 0;
         line-height:1cm;
         font-family: "BioRhyme";
         font-weight: lighter;
@@ -67,6 +73,7 @@
     }
 
     .us_btn{
+        margin-top: 10px;
         margin-left: 20px;
         padding: 7px 7px;
         font-size: 20px;
@@ -79,18 +86,18 @@
         padding-top: 20px;
         background-color:#b8ab9f ;
         padding-bottom: 30px;
-        margin:40px 15px 40px 15px;
     }
+    
     .carousel-item img{
     height: 120px;
     }
+
     .carousel-item__title{
         font-family: "Oswald";
         font-size: 30px;
         color: #eee7df;
         font-weight: bold;
     }
-
 
     .prod-btn{
         display: block;
@@ -132,7 +139,7 @@
     .main-container{
         display: none;
     }
-    .header{
+    .dk-header{
         display: none;
     }
 
@@ -142,6 +149,7 @@
 
 }
 
+/*TERMINA EL INDEX*/
 /*****************/
 /****************/
 
@@ -177,7 +185,7 @@ body{
     color:#45302d
 }
 
-.header{
+.dk-header{
     display: flex;
     flex-direction: column;
     align-items: center;
