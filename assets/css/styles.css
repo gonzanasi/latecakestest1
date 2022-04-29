@@ -146,6 +146,71 @@
     .main-container, .dk-banner, .products-container, .dk-footer{
         display: none;
     }
+    
+    /*************************/
+    /** PAGINA DE PRODUCTOS **/
+
+    .prod-mob-header{
+        width: 100%;
+        height: 150px;
+        background-image: url(../img/Cupcake/cupcake-banner-mob.jpg);
+        background-size:cover;    
+    }
+
+    .prod-mob-info{
+        width: 70%;
+        font-size: 20px;
+        color:black;
+    }
+
+    .prod-mob-info p{
+        background: rgba(240, 229, 219, 0.55);
+    }
+
+    #muffin-carousel{
+        width: 85%;
+        margin-top: 30px;
+    }
+
+    .carousel-muffin img{
+        height: auto;
+    }
+
+    .prod-title{
+        font-family: "Oswald";
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    #torta-carousel{
+        width: 85%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .carousel-torta img{
+        height: auto;
+    }
+
+    .carousel-torta{
+        height: auto;
+    }
+
+    #cookie-carousel{
+        width: 85%;
+        height: auto;
+        margin:30px auto;
+    }
+
+    .cookie-torta img{
+        height: auto;
+    }
+
+    .cookie-torta{
+        height: auto;
+    }
+
+
 
 }
 
@@ -291,15 +356,17 @@ body{
     color: #45302d;
 
 }
+/*TERMINA EL INDEX*/
+/*EMPIEZA PRODUCTOS*/
 
 }
 
 /*******************************/
 /*********************************/
 
-@media(min-width:1028px){
-    .navbar-collapse{
-        flex-grow: 0;
+@media(min-width:1025px){
+    .navbar-collapse {
+        flex-grow: 0 
     }
 
     .navbar-brand{
@@ -315,6 +382,7 @@ body{
     .navbar-nav a{
         margin: 0 20px;
     }
+
 
     .navbar{
         margin-top: 30px;
@@ -371,9 +439,10 @@ body{
     }
 
     .footer{
-        width: 100%;
-
+        width: 100%
     }
+/*TERMINA EL INDEX*/
+/*EMPIEZA PRODUCTOS*/
 
 }
 
@@ -381,7 +450,7 @@ body{
 /*************************************************/
 
 .products__img{
-    width: 90x;
+    width: 90%;
     height: 90px;
     padding-bottom: 20px;
 }

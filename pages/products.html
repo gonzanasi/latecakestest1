@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <script src="https://kit.fontawesome.com/fc8ff974d6.js" crossorigin="anonymous"></script>
     <title>Late Cakes Productos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/fc8ff974d6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--MENU DE NAVEGACIÓN-->
-<div>
+
+  <!------------NAVBAR------------>
+  <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <div class="logo-cont">
             <img class="late-logo" src="../assets/img/late-logo.png" alt="">
-          </a>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              <a class="nav-link" href="#">Productos</a>
+              <a class="nav-link" href="./products.html">Productos</a>
               <a class="nav-link" href="./aboutus.html">Nosotros</a>
               <a class="nav-link" href="./promotions.html">Promociones</a>
               <a class="nav-link" href="./contact.html">Contacto</a>
@@ -32,134 +33,151 @@
         </div>
       </nav>
 </div>
-<!---------------------------------->
-
-<!--BANNER-->
-    <header class="products-banner">
-        <img class="products-banner__img" src="../assets/img/Cupcake/cupcake-banner.jpg" alt="">
-        <div class="products-banner__container">
-            <h1><span>los mejores productos</span></h1> 
-            <h2><span>en un solo lugar</span></h2>
-        </div>
-    </header>
-
-
-
-    <div class="products-title">
-        <p>cup cakes</p>
+<!---------------------------->
+<!--MOBILE MAIN CONTENT-->
+<header class="prod-mob-header d-flex">
+    <div class="prod-mob-info ">
+        <p>Conocé los mejores productos del mercado.</p>
     </div>
-    
+</header>
+<main>
+    <!--MUFFIN CAROUSEL-->
+    <div id="muffin-carousel" class="carousel slide" data-bs-ride="carousel">
+        <p class="text-center prod-title">MUFFINS</p>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#muffin-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#muffin-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#muffin-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#muffin-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#muffin-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner carousel-muffin-container">
+          <div class="carousel-item active carousel-muffin">
+            <img src="../assets/img/Cupcake/chocolate-cupcake.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-muffin">
+            <img src="../assets/img/Cupcake/oreo-cupcake.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-muffin">
+            <img src="../assets/img/Cupcake/straw-cupcake.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-muffin">
+            <img src="../assets/img/Cupcake/vainilla-cupcake.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-muffin">
+            <img src="../assets/img/Cupcake/velvet-cupcake.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        </button>
+      </div>
+      <!------------------------------------------------------------------------------>
+
+      <!--TORTAS CAROUSEL-->
+      <div id="torta-carousel" class="carousel slide" data-bs-ride="carousel">
+        <p class="text-center prod-title">TORTAS</p>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#torta-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#torta-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#torta-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#torta-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner carousel-torta-container">
+          <div class="carousel-item active carousel-torta">
+            <img src="../assets/img/Cakes/black-cake.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-torta">
+            <img src="../assets/img/Cakes/chocolate-cake.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-torta">
+            <img src="../assets/img/Cakes/oreo-cake.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-torta">
+            <img src="../assets/img/Cakes/rose-cake.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        </button>
+      </div>
+      <!------------------------------------------------------------------------------>
+
+      <!--GALLETITAS CAROUSEL-->
+      <div id="cookie-carousel" class="carousel slide" data-bs-ride="carousel">
+        <p class="text-center prod-title">GALLETITAS</p>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#cookie-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#cookie-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#cookie-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#cookie-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#cookie-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#cookie-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner carousel-cookie-container">
+          <div class="carousel-item active carousel-cookie">
+            <img src="../assets/img/Cookies/brownie-cookies.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-cookie">
+            <img src="../assets/img/Cookies/buter-cookies.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-cookie">
+            <img src="../assets/img/Cookies/chip-cookies.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-cookie">
+            <img src="../assets/img/Cookies/funfetti-cookies.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-cookie">
+            <img src="../assets/img/Cookies/oatmeal-cookies.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item carousel-cookie">
+            <img src="../assets/img/Cookies/sink-cookies.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        </button>
+      </div>
+
+</main>
+
+
 <!---------------------------------->
-
-<!--GRID CUPCAKES-->
-    <main>
-        <div class="muffins-grid">
-            <div class="choco-cupcake">
-                <img class="cupcake-img" src="../assets/img/Cupcake/chocolate-cupcake.jpg" alt="choco">
-                    <div class="overlay">
-                        <div class="content">CHOCOLATE</div>
-                    </div>
-            </div>
-            <p class="choco-text product-text ">Elaborada con la mejor combinacion de frutos frescos, ideal para una merienda excepcional.</p>
             
-            <div class="straw-cupcake">
-                <img class="cupcake-img" src="../assets/img/Cupcake/straw-cupcake.jpg" alt="choco">
-                <div class="overlay">
-                    <div class="content">FRUTILLA</div>
-                </div>
+<footer>
+    <!--MOBILE FOOTER-->    
+            <div class="mob-footer">
+              <div class="mob-media text-center">
+                <i class="fa-brands fa-facebook fbicon"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp-square"></i>
+              </div>
+              <p class="text-center mob-rig">© 2022 Late Cakes. Todos los derechos reservados.</p>
             </div>
-            <p class="straw-text product-text">Para los amantes del chocolate, con una deliciosa crema de chocolate amargo.</p>
-
-            <div class="velvet-cupcake">
-                <img class="cupcake-img" src="../assets/img/Cupcake/velvet-cupcake.jpg" alt="choco">
-                <div class="overlay">
-                    <div class="content">FRUTOS ROJOS</div>
-                </div>
+    <!---------------------------------->
+    <!--DESKTOP FOOTER-->
+          <div class="dk-footer">
+            <div class="footer">
+              <div class="rights">
+                  <p>© 2022 Late Cakes. Todos los derechos reservados.</p>
+              </div>
+              
+              <div class="contact-icons">
+                  <i class="fa-brands fa-facebook fbicon"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-whatsapp-square"></i>
+              </div>
             </div>
-            <p class="velvet-text product-text">De frutilla natural, compuesta por crema rosada y galletita dulce, la mejor opción.</p>
-
-            <div class="vainilla-cupcake">
-                <img class="cupcake-img" src="../assets/img/Cupcake/vainilla-cupcake.jpg" alt="choco">
-                <div class="overlay">
-                    <div class="content">VAINILLA</div>
-                </div>
-            </div>
-            <p class="vainilla-text product-text">La más elegida, con sabor a vainilla y una crema de chocolate, irresistible ante cualquiera.</p>
-        
-        </div>
-<!---------------------------------->
-
-        <div>
-            <p class="products-title">TORTAS</p>
-        </div>
-
-<!--GRID CAKES-->        
-        <div class="cakes-grid">
-            <div class="black-cake">
-                <img class="cake-img" src="../assets/img/Cakes/black-cake.jpg" alt="black cake">
-            </div>
-            <p class="black-text product-text">Perfecta opción si necesitas algo simple, elegante y gustoso. Ideal en cuanto a tamaño para compatir en distintas ocasiones. Con frutilla y chocolate o de crema y dulce de leche.</p>
-            
-            <div class="rose-cake">
-                <img class="cake-img" src="../assets/img/Cakes/rose-cake.jpg" alt="black cake">
-            </div>
-
-            <p class="rose-text product-text">Si buscás algo colorido y voluminoso, estás opciones son perfectas para vos. Con chips y dulce de leche, o con picos de chocolate blanco y chocolate por dentro.</p>
-            
-            <div class="fudge-cake">
-                <img class="cake-img" src="../assets/img/Cakes/fudge-cake.jpg" alt="fudge cake">
-            </div>
-            
-            <div class="white-cake">
-                <img class="cake-img" src="../assets/img/Cakes/white-cake.jpeg" alt="white cake">
-            </div>
-       
-        </div>
-    </main>
-<!---------------------------------->
-
-        <div>
-            <p class="products-title">galletitas</p>
-        </div>
-
-<!--GRID GALLETITAS-->
-        <div class="cookies-grid">
-            <div class="brownie-cookie">
-                <img class="cookie-img" src="../assets/img/Cookies/brownie-cookies.jpg" alt="black cake">
-            </div>
-            <div class="buter-cookie">
-                <img class="cookie-img" src="../assets/img/Cookies/buter-cookies.jpg" alt="black cake">
-            </div>
-            <div class="chip-cookie">
-                <img class="cookie-img" src="../assets/img/Cookies/chip-cookies.jpg" alt="black cake">
-            </div>
-            <div class="funfetti-cookie">
-                <img class="cookie-img" src="../assets/img/Cookies/funfetti-cookies.jpg" alt="black cake">
-            </div>
-            <p class="brownie-text cookie-text">Elaboradas de la misma forma que el brownie, pero en forma de galletita, con el mejor chocolate y chips</p>
-            <p class="buter-text cookie-text">Los rockets nunca pueden faltar, y menos en las galletitas. Humedas y coloridas, no pueden faltar en la mesa.</p>
-            <p class="funfetti-text cookie-text">Las galletias clasicas, con granas de colores, las más solicitadas de nuestro local.</p> 
-            <p class="chip-text cookie-text">Con chips de chocolate, uno de los mejores productos elaborados por nosotros.</p>
-        </div>
-
-
-
-
-<!---------------------------------->
-            
-    <!--FOOTER-->
-    <footer class="footer">
-        <div class="rights">
-            <p>® Todos los derechos reservados - Late Cakes </p>
-        </div>
-        
-        <div class="contact-icons">
-            <i class="fa-brands fa-facebook fbicon"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-whatsapp-square"></i>
-        </div>
-    </footer>
-<!---------------------------------->   
+          </div>
+    <!---------------------------------->
+          </footer>  
+      
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
