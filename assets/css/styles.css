@@ -127,7 +127,7 @@
         width: 60%;
         color:#b8ab9f;
         margin-bottom: 20px;
-
+        margin-top: 20px;
     }
 
     .mob-rig{
@@ -143,7 +143,7 @@
         display: none;
     }
 
-    .main-container, .dk-banner, .products-container, .dk-footer{
+    .main-container, .dk-banner, .products-container, .dk-footer, .main-desktop-content{
         display: none;
     }
     
@@ -441,6 +441,10 @@ body{
     .footer{
         width: 100%
     }
+    .mob-carousel, .prod-mob-info{
+        display: none;
+    }
+    
 /*TERMINA EL INDEX*/
 /*EMPIEZA PRODUCTOS*/
 
@@ -501,7 +505,9 @@ body{
 /*PAGINA DE PRODUCTOS*/
 /*BANNER*/
 
-
+.prod-mob-header, .muffin-carousel, .torta-carousel, .cookie-carousel{
+    display: none;
+}
 
 .products-banner{
     display: flex;
@@ -718,6 +724,7 @@ span{
                         "cookie3 cookie4"
                         "text9 text10";
     margin-bottom: 40px;
+    justify-items: center;
 }
 
 .brownie-cookie{
