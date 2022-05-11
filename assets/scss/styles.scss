@@ -137,11 +137,11 @@
         display: none;
     }
     .dk-header{
-        display: none;
+        @extend .main-container
     }
 
     .main-container, .dk-banner, .products-container, .dk-footer, .main-desktop-content{
-        display: none;
+        @extend .main-container
     }
     
     /*************************/
@@ -189,16 +189,11 @@
             }}
 
     #cookie-carousel{
-        width: 85%;
-        height: auto;
-        margin:30px auto;
+       @extend #torta-carousel
     }
 
     .cookie-torta{
-        height: auto;
-            img{
-                height: auto;
-            }}
+        @extend .carousel-torta
 
 
 
@@ -967,4 +962,5 @@ textarea{
     width: 60%;
         p{
             margin-bottom: 30px;
-        }}
+        }
+    }}
